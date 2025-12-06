@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>100 Reasons I Love You</title>
+
+  <!-- Handwritten fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+
+  <!-- INTRO PAGE -->
+  <div id="intro-screen" class="intro-screen">
+    <div class="intro-content">
+      <h1 class="intro-title">For Mi Amorcito ❤️</h1>
+      <p class="intro-message">
+        I always try to tell you how much i love you, but no matter what i say, its never enough for me, so here are 100 reasons why i love you.<br><br>
+        100 is too little, because there are millions of reasons why i fell in love with you.
+      </p>
+      <button id="begin-btn" class="begin-btn">Click to Begin</button>
+    </div>
+  </div>
+  
+<!-- POLAROID VIEWER (TEXT ONLY VERSION) -->
+ 
+<div id="polaroid-viewer" class="polaroid-viewer hidden" aria-hidden="true">
+  <div class="polaroid-note-1"></div>
+<div class="polaroid-note-2"></div>
+
+ <div class="polaroid-wrap">
+    
+  <button id="polaroid-close" class="polaroid-close" aria-label="Close viewer">✕</button>
+
+  <div class="polaroid-frame">
+
+    <!-- TEXT ONLY Polaroid Content -->
+    <div class="polaroid-text-only">
+      <p id="polaroid-text" class="polaroid-text"></p>
+    </div>
+
+    <div class="polaroid-footer">
+      <span id="polaroid-counter" class="polaroid-counter">1 / 100</span>
+    </div>
+
+  </div>
+
+  <!-- NEW: navigation container holding both buttons -->
+  <div class="polaroid-nav-container">
+    <button id="polaroid-prev" class="polaroid-btn">←</button>
+    <button id="polaroid-next" class="polaroid-btn">→</button>
+  </div>
+
+</div>
+
+
+    </div>
+
+    <!-- LEFT & RIGHT arrows -->
+    <button id="polaroid-prev" class="polaroid-btn">←</button>
+<button id="polaroid-next" class="polaroid-btn">→</button>
+
+  </div>
+</div>
+
+
+
+<div class="floating-sticker" style="top:10%; left:5%;">💗</div>
+<div class="floating-sticker" style="top:75%; left:10%;">✨</div>
+<div class="floating-sticker" style="top:20%; right:5%;">💞</div>
+<div class="floating-sticker" style="bottom:15%; right:15%;">🌸</div>
+
+
+
+  <!-- Background music -->
+  <audio id="bg-music" src="music.mp3" preload="auto"></audio>
+
+  <div class="scene hidden" id="main-scene">
+    <header class="topbar">
+      <h1>100 Reasons I Love You</h1>
+      <div class="controls">
+        <button id="prev" aria-label="Previous page">◀</button>
+        <span id="progress">1 / 100</span>
+        <button id="next" aria-label="Next page">▶</button>
+      </div>
+    </header>
+
+    <main class="book" id="book" aria-live="polite">
+      <!-- Pages injected by JS -->
+    </main>
+
+    <footer class="footer-note">
+      <div class="taped">
+        <p class="handwritten">Te Amo Mi Diosa ✶</p>
+      </div>
+    </footer>
+  </div>
+
+  <template id="page-template">
+    <article class="page">
+      <div class="page-inner">
+        <div class="doodles top-left">✿</div>
+        <div class="reason-wrap">
+          <h2 class="reason-number">#1</h2>
+          <p class="reason-text">I love the way you laugh.</p>
+        </div>
+        <div class="sticky-note">te amo My patri pie😘</div>
+        <div class="doodles bottom-right">✧</div>
+      </div>
+    </article>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+</html>
